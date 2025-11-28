@@ -1,28 +1,59 @@
-In this DevOps task, you need to build and deploy a full-stack CRUD application using the MEAN stack (MongoDB, Express, Angular 15, and Node.js). The backend will be developed with Node.js and Express to provide REST APIs, connecting to a MongoDB database. The frontend will be an Angular application utilizing HTTPClient for communication.  
+# MEAN CRUD App Deployment Assignment
 
-The application will manage a collection of tutorials, where each tutorial includes an ID, title, description, and published status. Users will be able to create, retrieve, update, and delete tutorials. Additionally, a search box will allow users to find tutorials by title.
+A simple **MEAN stack CRUD application** deployed using Docker, Docker Compose, and automated CI/CD with Jenkins. Nginx is used as a reverse proxy, and MongoDB serves as the database.
 
-## Project setup
+## **Project Structure**
 
-### Node.js Server
+crud-dd-mean-app/
+│
+├─ backend/ # Node.js + Express backend
+│ ├─ Dockerfile
+│ ├─ package.json
+│ ├─ server.js
+│ └─ ...
+│
+├─ frontend/ # Angular frontend
+│ ├─ Dockerfile
+│ ├─ package.json
+│ ├─ angular.json
+│ └─ src/
+│
+├─ docker-compose.yml
+├─ Jenkinsfile
+└─ README.md
 
-cd backend
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/<your-username>/crud-dd-mean-app.git
+cd crud-dd-mean-app
 
-npm install
+2. Build Docker Images
 
-You can update the MongoDB credentials by modifying the `db.config.js` file located in `app/config/`.
+docker build -t <dockerhub-username>/mean-app-be:latest ./backend
+docker build -t <dockerhub-username>/mean-app-fe:latest ./frontend
 
-Run `node server.js`
+3. Push Images to Docker Hub
 
-### Angular Client
+docker login
+docker push <dockerhub-username>/mean-app-be:latest
+docker push <dockerhub-username>/mean-app-fe:latest
 
-cd frontend
+4. Deploy Using Docker Compose on Ubuntu VM
+ssh ubuntu@<vm-ip>
+cd /path/to/deployment
+docker-compose up -d --build
 
-npm install
+CI/CD Pipeline (Jenkins)
 
-Run `ng serve --port 8081`
+Pipeline Steps:
 
-You can modify the `src/app/services/tutorial.service.ts` file to adjust how the frontend interacts with the backend.
+Checkout code from GitHub
+Build Docker images for frontend and backend
+Push images to Docker Hub
+Deploy latest images on VM using Docker Compose
+Jenkinsfile is included in the repository.
 
-Navigate to `http://localhost:8081/`
+* Nginx Reverse Proxy Setup
+Configured inside the frontend Docker image.
+Serves Angular app on port 80.
 
