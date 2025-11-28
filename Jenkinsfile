@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        GIT_CREDENTIALS = 'github-creds'              // GitHub credentials ID
-        DOCKER_HUB_CREDENTIALS = 'dockerhub-id'       // Docker Hub credentials ID
-        
+        GIT_CREDENTIALS = 'github-creds'
+        DOCKER_HUB_CREDENTIALS = 'dockerhub-id'
+
         FRONTEND_IMAGE = 'pratham16013/mean-app-fe'
         BACKEND_IMAGE  = 'pratham16013/mean-app-be'
-        IMAGE_TAG = "latest"
+        IMAGE_TAG = 'latest'
 
-        DEPLOY_DIR = '/home/ubuntu/mean-docker'
+        DEPLOY_DIR = '/home/ubuntu'
     }
 
     stages {
@@ -24,17 +24,13 @@ pipeline {
 
         stage('Build Backend Image') {
             steps {
-                script {
-                    docker.build("${BACKEND_IMAGE}:${IMAGE_TAG}", './backend')
-                }
+                sh "docker build -t ${BACKEND_IMAGE}:${IMAGE_TAG} ./backend"
             }
         }
 
         stage('Build Frontend Image') {
             steps {
-                script {
-                    docker.build("${FRONTEND_IMAGE}:${IMAGE_TAG}", './frontend')
-                }
+                sh "docker build -t ${FRONTEND_IMAGE}:${IMAGE_TAG} ./frontend"
             }
         }
 
@@ -67,3 +63,4 @@ pipeline {
         }
     }
 }
+
