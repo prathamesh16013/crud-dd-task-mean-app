@@ -8,9 +8,7 @@ RUN npm run build --prod
 
 # Stage 2: Serve with Nginx
 FROM nginx:alpine
-# Correct path from angular.json
+# Correct path according to angular.json
 COPY --from=build /usr/src/app/dist/angular-15-crud /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
-
-
