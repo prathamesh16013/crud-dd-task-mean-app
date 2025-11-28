@@ -9,7 +9,7 @@ pipeline {
         BACKEND_IMAGE  = 'pratham16013/mean-app-be'
         IMAGE_TAG = 'latest'
 
-        DEPLOY_DIR = '/home/ubuntu'
+        DEPLOY_DIR = '/home/ubuntu/jenkins-deploy'
     }
 
     stages {
@@ -63,4 +63,3 @@ pipeline {
         }
     }
 }
-
