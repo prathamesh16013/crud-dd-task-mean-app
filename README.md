@@ -61,8 +61,8 @@ Jenkinsfile is included in the repository.
 Configured inside the frontend Docker image.
 Serves Angular app on port 80.
  ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(3).png?raw=true)
- ![Image Alt](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0bf1b1c4-ceec-4462-9c0d-bbb8008dbafc" />)
- ![Image Alt]()
+ ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(1).png?raw=true)
+ ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(1).png?raw=true)
 
 Database:
 
