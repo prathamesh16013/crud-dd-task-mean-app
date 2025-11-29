@@ -21,10 +21,8 @@ Git: Version control.
 
 
 
- ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(3).png?raw=true)
  ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(1).png?raw=true)
  ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(2).png?raw=true)
- ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(4).png?raw=true)
 
 Project Structure:
 
@@ -91,3 +89,8 @@ MongoDB used as the database.
 Can be deployed either:
 Directly on Ubuntu VM
 Via official MongoDB Docker image (included in docker-compose.yml)
+
+ ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(3).png?raw=true)
+
+ ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(4).png?raw=true)
+
