@@ -60,6 +60,7 @@ Jenkinsfile is included in the repository.
 * Nginx Reverse Proxy Setup
 Configured inside the frontend Docker image.
 Serves Angular app on port 80.
+ ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(3).png?raw=true)
 
 Database:
 
@@ -68,4 +69,4 @@ Can be deployed either:
 Directly on Ubuntu VM
 Via official MongoDB Docker image (included in docker-compose.yml)
 
- ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(4).png?raw=true)
+![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(4).png?raw=true)
