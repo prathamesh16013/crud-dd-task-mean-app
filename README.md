@@ -1,13 +1,32 @@
 # MEAN CRUD App Deployment Assignment
 
-**MEAN stack CRUD application** deployed using Docker, Docker Compose, and automated CI/CD with Jenkins. Nginx is used as a reverse proxy, and MongoDB serves as the database.
+MEAN stack CRUD application deployed using Docker, Docker Compose, and automated CI/CD with Jenkins. 
+Nginx is used as a reverse proxy, and MongoDB serves as the database.
 
-**Project Structure**
+Presentation Layer (Frontend) - Handles the user interface.
+Application Layer (Backend) - Contains business logic.
+Data Layer (Database) - Stores and manages the application’s data.
+
+Each layer will be deployed in a Docker container, and we use Jenkins to manage the CI/CD pipeline for the application.
+
+Project Roadmap:
+
+Tools Required:-
+EC2: Set up a new Ubuntu virtual machine on any cloud platform on AWS.
+Docker: To containerize the application components.
+Docker Compose: To manage multi-container Docker applications.
+Jenkins: For CI/CD automation.
+Git: Version control.
+
+
+
+
  ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(3).png?raw=true)
  ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(1).png?raw=true)
  ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(2).png?raw=true)
  ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(4).png?raw=true)
 
+Project Structure:
 
 crud-dd-mean-app/
 │
