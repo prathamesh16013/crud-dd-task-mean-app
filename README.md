@@ -46,21 +46,20 @@ crud-dd-mean-app/
 ├─ Jenkinsfile
 └─ README.md
 
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/<your-username>/crud-dd-mean-app.git
+1. Clone the Repository
+git clone https://github.com/prathamesh16013/crud-dd-mean-app.git
 cd crud-dd-mean-app
 
 2. Build Docker Images
 
-docker build -t <dockerhub-username>/mean-app-be:latest ./backend
-docker build -t <dockerhub-username>/mean-app-fe:latest ./frontend
+docker build -t pratham16013/mean-app-be:latest ./backend
+docker build -t pratham16013/mean-app-fe:latest ./frontend
 
 3. Push Images to Docker Hub
 
 docker login
-docker push <dockerhub-username>/mean-app-be:latest
-docker push <dockerhub-username>/mean-app-fe:latest
+docker push pratham16013/mean-app-be:latest
+docker push pratham16013/mean-app-fe:latest
 
 4. Deploy Using Docker Compose on Ubuntu VM
 ssh ubuntu@<vm-ip>
@@ -69,7 +68,7 @@ docker-compose up -d --build
 
 5. Access the Application
 Open a browser and go to:
-http://<public-ip>:8081
+http://<public-ip>:80
 
 CI/CD Pipeline (Jenkins)
 
@@ -92,4 +91,3 @@ MongoDB used as the database.
 Can be deployed either:
 Directly on Ubuntu VM
 Via official MongoDB Docker image (included in docker-compose.yml)
-
