@@ -43,6 +43,10 @@ ssh ubuntu@<vm-ip>
 cd /path/to/deployment
 docker-compose up -d --build
 
+5. Access the Application
+Open a browser and go to:
+http://<public-ip>:8081
+
 CI/CD Pipeline (Jenkins)
 
 Pipeline Steps:
@@ -56,4 +60,11 @@ Jenkinsfile is included in the repository.
 * Nginx Reverse Proxy Setup
 Configured inside the frontend Docker image.
 Serves Angular app on port 80.
+
+Database:
+
+MongoDB used as the database.
+Can be deployed either:
+Directly on Ubuntu VM
+Via official MongoDB Docker image (included in docker-compose.yml)
 
