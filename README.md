@@ -20,10 +20,6 @@ Git: Version control.
 
 
 
-
- ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(1).png?raw=true)
- ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(2).png?raw=true)
-
 Project Structure:
 
 crud-dd-mean-app/
@@ -78,10 +74,14 @@ Push images to Docker Hub
 Deploy latest images on VM using Docker Compose
 Jenkinsfile is included in the repository.
 
+ ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(1).png?raw=true)
+
+
 * Nginx Reverse Proxy Setup
 Configured inside the frontend Docker image.
 Serves Angular app on port 80.
 
+ ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(2).png?raw=true)
 
 Database:
 
