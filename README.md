@@ -1,8 +1,8 @@
 # MEAN CRUD App Deployment Assignment
 
-A simple **MEAN stack CRUD application** deployed using Docker, Docker Compose, and automated CI/CD with Jenkins. Nginx is used as a reverse proxy, and MongoDB serves as the database.
+**MEAN stack CRUD application** deployed using Docker, Docker Compose, and automated CI/CD with Jenkins. Nginx is used as a reverse proxy, and MongoDB serves as the database.
 
-## **Project Structure**
+**Project Structure**
 
 crud-dd-mean-app/
 │
@@ -62,7 +62,7 @@ Configured inside the frontend Docker image.
 Serves Angular app on port 80.
  ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(3).png?raw=true)
  ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(1).png?raw=true)
- ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(1).png?raw=true)
+ ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(2).png?raw=true)
 
 Database:
 
