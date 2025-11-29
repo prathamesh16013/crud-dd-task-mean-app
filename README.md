@@ -68,5 +68,4 @@ Can be deployed either:
 Directly on Ubuntu VM
 Via official MongoDB Docker image (included in docker-compose.yml)
 
- ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/72c1d8bcd1d4c330829aaeba8d7e36e518cd5c67/Screenshot%20(4).png)
-
+ ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(4).png?raw=true)
