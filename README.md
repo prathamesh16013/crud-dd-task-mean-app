@@ -3,6 +3,11 @@
 **MEAN stack CRUD application** deployed using Docker, Docker Compose, and automated CI/CD with Jenkins. Nginx is used as a reverse proxy, and MongoDB serves as the database.
 
 **Project Structure**
+ ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(3).png?raw=true)
+ ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(1).png?raw=true)
+ ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(2).png?raw=true)
+ ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(4).png?raw=true)
+
 
 crud-dd-mean-app/
 │
@@ -60,9 +65,7 @@ Jenkinsfile is included in the repository.
 * Nginx Reverse Proxy Setup
 Configured inside the frontend Docker image.
 Serves Angular app on port 80.
- ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(3).png?raw=true)
- ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(1).png?raw=true)
- ![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(2).png?raw=true)
+
 
 Database:
 
@@ -71,4 +74,3 @@ Can be deployed either:
 Directly on Ubuntu VM
 Via official MongoDB Docker image (included in docker-compose.yml)
 
-![Image Alt](https://github.com/prathamesh16013/crud-dd-task-mean-app/blob/master/Screenshot%20(4).png?raw=true)
